@@ -4,17 +4,6 @@
  */
 package baithuchanh1904;
 
-/**
- *
- * @author HP
- */
-public class BaiThucHanh1904 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-}
+
+

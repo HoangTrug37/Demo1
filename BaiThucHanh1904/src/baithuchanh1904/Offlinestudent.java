@@ -4,17 +4,41 @@
  */
 package baithuchanh1904;
 
-/**
- *
- * @author HP
- */
+class Student extends Person{
+protected String masv;
+protected float diemtrungbinh;
+protected String email;
+public void intPutStudent(){
+Scanner input = new Scanner(System.in);
+System.out.println("Nhap ma sinh vien");
+this.masv = input.nextLine();
+System.out.println("Nhap diem trung binh");
+this.diemtrungbinh = input.nextFloat();
+System.out.println("Nhap email");
+this.email = input.nextLine();
+}
+public void showStudent(){
+System.out.println("Ma sinh vien : " +this.masv +" Diem trung binh " + this.diemtrungbinh);
+}
+public void kiemtrahocbong(){
+if(this.diemtrungbinh >=8){
+System.out.println("Duoc hoc bong");
+}else{
+System.out.println("Khong duoc hoc bong");
+}
+}
+}
+
 public class Offlinestudent {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+ public static void main(String[] args) {
+Student person = new Student();
+person.intputPerson();
+person.intPutStudent();
+person.showPerson();
+person.showStudent();
+person.kiemtrahocbong();
+
+ }
+
 }
